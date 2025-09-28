@@ -8,6 +8,7 @@ This is a place for you to start building your activist toolkit!
 - Activist Website centers around the importance of mental health. The website aims to spread awareness, information, and resources about mental health.
 - There is a donation page on the website, but the website does not actually accept donations. It is purely for interactive purposes. However, there are links to websites where the user can actually donate.
 
+## Instructions
 ### Project Requirements
 Your project should:
 - Build a multipage website using HTML, CSS, and JavaScript.
