@@ -1,0 +1,345 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucidia Console", "Courier New", monospace;
+}
+
+body {
+  background-color: #fdd6c9;
+  color: #3D1200;
+  padding: 2em;
+  text-align: center;
+}
+
+/* STYLE TEXT */
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+h2 {
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+p {
+  font-size: larger;
+  margin: 0.5em;
+}
+
+/* STYLE IMAGES */
+img {
+  border: dotted;
+}
+
+/* STYLE NAV BAR */
+ul {
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  list-style: none;
+  display:inline-block;
+  background-color: #3D1200
+}
+
+li {
+  display: inline-flex;
+}
+
+li a {
+  text-decoration: none;
+  color: #fdd6c9;
+  font-size: larger;
+  padding: 1em 1.5em;
+}
+
+li a:hover {
+  background-color: #fdd6c9;
+  color: #3D1200;
+}
+
+
+/* STYLE BUTTONS */
+button {
+  opacity: 1;
+  padding: 1em;
+  background-color: #3D1200;
+  color: #fdd6c9;
+  font-size: larger;
+  border: none;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+/* ADD MORE! */
+/* Support Page*/
+.supportBox {
+  justify-content: center;
+  margin: 2em 15%;
+  padding: 2em;
+  border: dotted;
+}
+
+.instructions {
+  margin-bottom: 2em;
+}
+
+input[type=text] {
+  font-size: large;
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 5px;
+}
+
+textarea {
+  font-size: large;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  resize: none;
+  width: 100%;
+  height: 6em;
+  padding: 5px;
+}
+
+#supMsg {
+  font-size: x-large;
+}
+
+/* Support Page - Resources Section */
+/* The pictures with transparent text on top can be glitchy and may not work for all browsers */
+/* Source: https://www.w3schools.com/howto/howto_css_image_transparent.asp */
+.sources {
+  position: relative;
+}
+
+.sources img {
+  height: 20em;
+  margin: 2em;
+}
+
+.desc {
+  position: absolute;
+  bottom: calc(2em + 5px);
+  left: 2em;
+  background: rgba(253, 214, 201, 0.7);
+  width: calc(100% - 4em);
+  height: 50%;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+
+.desc p {
+  position: absolute;
+  margin: 1em;
+}
+
+.desc:hover {
+  height: 60%;
+  transition: 0.5s ease;
+}
+
+/* Section dividers */
+.divider {
+  background-color: #3D1200;
+  width: 100%;
+  height: 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Home Page */
+/* The pictures with text underneath can be glitchy and may not work for all browsers */
+/* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  position: relative;
+}
+
+.content img {
+  height: 15em;
+  display: block;
+  margin: 2em;
+  transition: 0.5s ease;
+}
+
+.content:hover img{
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  height: calc(100% - 4em);
+  width: calc(100% - 4em);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.overlay p {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 55%);
+  width: 70%;
+}
+
+.overlay:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+/* Home Page - Facts */
+.factBox {
+  justify-content: center;
+  margin: 2em 15%;
+  padding: 2em;
+  border: dotted;
+}
+
+.factButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.factButtons button {
+  margin: 0.5em;
+}
+
+#fact {
+  padding: 0em;
+  margin: 0em;
+  font-size: x-large;
+}
+
+#note {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* Donation Page */
+.donations {
+  border: dotted;
+  padding: 2em;
+  margin: 2em 15%;
+}
+
+.donations button {
+  margin: 1em;
+}
+
+#price {
+  color: #3D1200;
+  font-size: large;
+  margin-bottom: 1em;
+  width: 20%;
+  padding: 5px;
+}
+
+#equivalent {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+#donTwoSection {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* Footer */
+footer {
+  background-color: #3D1200;
+  text-align: left;
+  color: #fdd6c9;
+  padding: 0.5em;
+  margin-top: 3em;
+}
+
+.footText {
+  margin-left: 0.5em;
+  padding: 2px;
+}
+
+/* Scroll to the top */
+/* Source: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
+.toTheTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #3D1200;
+  color: #fdd6c9;
+  cursor: pointer;
+  padding: 15px;
+  font-size: large;
+}
+
+.toTheTop:hover {
+  opacity: 0.6;
+}
+
+/* Bookmarks */
+/* Source: https://www.w3schools.com/html/html_links_bookmarks.asp */
+.bookmarks {
+  background-color: #3D1200;
+  color: #fdd6c9;
+  width: 35%;
+  padding: 1em;
+}
+
+.bookmarks li a {
+  text-decoration: underline;
+  padding: 1em 0.5em
+}
+
+/* Trigger Warning */
+.warnBox {
+  background-color: #3D1200;
+  position: relative;
+  width: 75%;
+}
+
+.warnText {
+  padding: 2em;
+  color: #fdd6c9;
+}
+
+.warnText h1 {
+  margin: 0;
+}
+
+#toWebsite {
+  margin: 1em;
+  width: 70%;
+  background-color: #fdd6c9;
+}
+
+#toWebsite a {
+  color: #3D1200;
+  padding: 0.5em;
+  text-decoration: none;
+  font-weight: 700;
+}
