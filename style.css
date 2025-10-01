@@ -1,35 +1,36 @@
 /* STYLE SECTIONING TAGS */
-* { /* Reset the space of the webpage */
+* {
+  /* Reset the space of the webpage */
   margin: 0px;
   padding: 0px;
   font-family: "Lucidia Console", "Courier New", monospace;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #fdd6c9;
   color: #3D1200;
-  padding: 2em;
   text-align: center;
+  height: 100vh;
+  display: grid;
 }
 
 /* STYLE TEXT */
 
 h1 {
   margin-top: 1em;
-  margin-bottom: 0.5em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0em 2em;
 }
 
 h2 {
   margin-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0em 2em;
 }
 
 p {
   font-size: larger;
   margin: 0.5em;
+  padding: 0em 2em;
 }
 
 /* STYLE IMAGES */
@@ -41,9 +42,8 @@ img {
 ul {
   width: 100%;
   list-style-type: none;
-  overflow: hidden;
   list-style: none;
-  display:inline-block;
+  display: inline-block;
   background-color: #3D1200
 }
 
@@ -61,6 +61,47 @@ li a {
 li a:hover {
   background-color: #fdd6c9;
   color: #3D1200;
+}
+
+/* Bookmarks */
+/* Source: https://www.w3schools.com/html/html_links_bookmarks.asp */
+#bookmarkButton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+#bookmarkButton:hover {
+  background-color: #fdd6c9;
+  color: #3D1200;
+  opacity: 1;
+
+  .bookmarksInner {
+    display: block;
+  }
+}
+
+.bookmarksOuter {
+  display: block;
+}
+
+.bookmarksInner {
+  position: fixed;
+  background-color: #3D1200;
+  color: #fdd6c9;
+  width: 20%;
+  padding: 1em;
+  display: none;
+  z-index: 99;
+  top: 3em;
+  left: 0;
+}
+
+.bookmarksInner li a {
+  text-decoration: underline;
+  padding: 1em 0.5em;
+  font-size: large;
 }
 
 
@@ -179,7 +220,7 @@ textarea {
   transition: 0.5s ease;
 }
 
-.content:hover img{
+.content:hover img {
   opacity: 0.3;
   transition: 0.5s ease;
 }
@@ -267,11 +308,14 @@ textarea {
 
 /* Footer */
 footer {
+  position: relative;
   background-color: #3D1200;
   text-align: left;
   color: #fdd6c9;
   padding: 0.5em;
-  margin-top: 3em;
+  width: 100%;
+  height: fit-content;
+  align-self: self-end;
 }
 
 .footText {
@@ -299,20 +343,6 @@ footer {
 
 .toTheTop:hover {
   opacity: 0.6;
-}
-
-/* Bookmarks */
-/* Source: https://www.w3schools.com/html/html_links_bookmarks.asp */
-.bookmarks {
-  background-color: #3D1200;
-  color: #fdd6c9;
-  width: 35%;
-  padding: 1em;
-}
-
-.bookmarks li a {
-  text-decoration: underline;
-  padding: 1em 0.5em
 }
 
 /* Trigger Warning */
