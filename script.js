@@ -94,6 +94,11 @@ if (bookmarkButton) {
       bookmarksInner[i].style.display = "block";
     }
   })
+  bookmarkButton.addEventListener("mouseleave", event => {
+    for (var i = 0; i < bookmarksInner.length; i++) {
+      bookmarksInner[i].style.display = "none";
+    }
+  })
 }
 
 function scrollFunction() {
