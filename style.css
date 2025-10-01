@@ -40,6 +40,9 @@ img {
 
 /* STYLE NAV BAR */
 ul {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   list-style-type: none;
   list-style: none;
@@ -66,10 +69,9 @@ li a:hover {
 /* Bookmarks */
 /* Source: https://www.w3schools.com/html/html_links_bookmarks.asp */
 #bookmarkButton {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: rotate(90deg);
+  position: relative;
+  float: left;
+  z-index: 99;
 }
 
 #bookmarkButton:hover {
@@ -91,7 +93,7 @@ li a:hover {
   background-color: #3D1200;
   color: #fdd6c9;
   width: 20%;
-  padding: 1em;
+  height: 100%;
   display: none;
   z-index: 99;
   top: 3em;
@@ -100,7 +102,6 @@ li a:hover {
 
 .bookmarksInner li a {
   text-decoration: underline;
-  padding: 1em 0.5em;
   font-size: large;
 }
 
@@ -350,6 +351,7 @@ footer {
   background-color: #3D1200;
   position: relative;
   width: 75%;
+  align-content: center;
 }
 
 .warnText {

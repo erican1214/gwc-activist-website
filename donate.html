@@ -1,115 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <title>HotCoco☕ - Donate Page</title>
-    <meta charset="utf-8" />
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	  <!-- link the webpage's stylesheet -->
-	  <link rel="stylesheet" href="/style.css" />
+<head>
 
-	  <!-- link the webpage's JavaScript file -->
-	  <script src="/script.js" defer></script>
+  <title>HotCoco☕ - Donate Page</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  </head>
-  
-  <body>
+  <!-- link the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
 
-    <nav>
-      <ul>
-        <li><a href="home.html">Home☕</a></li>
-        <li><a href="need_support.html">Need Support?</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+  <!-- link the webpage's JavaScript file -->
+  <script src="/script.js" defer></script>
 
-    <div class="container">
-      <ul class="bookmarks">
-        <p>Bookmarks!</p>
-        <li><a href="#donOneSection">Organizations Receiving Donations (You are here!)</a></li>
-        <li><a href="#donTwoSection">Make Your Donation!</a></li>
-        <li><a href="#donThreeSection">What to do after donating?</a></li>
-      </ul>
+</head>
+
+<body>
+
+  <nav>
+    <div class=bookmarksOuter>
+      <button id="bookmarkButton">
+        |Bookmarks|
+        <ul class="bookmarksInner">
+          <li><a href="#donOneSection">Organizations Receiving Donations (You are here!)</a></li>
+          <li><a href="#donTwoSection">Make Your Donation!</a></li>
+          <li><a href="#donThreeSection">What to do after donating?</a></li>
+        </ul>
+      </button>
     </div>
-    
-    <button onclick="topFunction()" class="toTheTop" title="Click me to scroll to the top!">To the Top!</button>
-    
-    <h1 id=donOneSection>Donate</h1>
-    <h2>Help others feel the warmth of hot cocoa</h2>
-    <h2>These donations will go to...</h2>
-    
-    <div class="container">
+    <ul>
+      <li><a href="home.html">Home☕</a></li>
+      <li><a href="need_support.html">Need Support?</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-      <div class="sources">
-        <img src="assets/make_a_change.jpg" alt="A person's hands holding coins with a paper that says 'Make a Change'">
-        <div class="desc">
-          <p><a href="https://mhanational.org/donate-now">Mental Health America</a> - Their message: "Your gift means we can bring hope to the 1 in 5 Americans living with a mental health condition. Just $1.25 helps us screen someone for a mental health condition before a point of crisis - B4Stage4. Together we are fighting smarter, better, and harder than we ever have before."</p>
-        </div>
-      </div>
+  <button onclick="topFunction()" class="toTheTop" title="Click me to scroll to the top!">To the Top!</button>
 
-      <div class="sources">
-        <img src="assets/three_girls.jpg" alt="Three girls sitting outside on a wooden bench. The two girls on the left and right seem to be comforting the girl in the middle. The girl on the left has one hand on one knee of the middle girl. The girl on the right has one hand on the other knee of the middle girl.">
-        <div class="desc">
-           <p><a href="https://jedfoundation.org/">The Jed Foundation</a> - Focusing on suicide prevention and the emotional wellbeing of teens and young adults. Their message: "With your support we’ll extend critical lifelines to more than 13 million students. Please make a gift today to help us be there for young adults when they need it most."</p>
-        </div>
-      </div>
+  <h1 id=donOneSection>Donate</h1>
+  <h2>Help others feel the warmth of hot cocoa</h2>
+  <h2>These donations will go to...</h2>
 
-      <div class="sources">
-        <img src="assets/change_the_world.jpg" alt="A picture of pavement with the words 'Together we can change the world' written in white chalk">
-        <div class="desc">
-          <p><a href="https://supporting.afsp.org/">American Foundation for Suicide Prevention</a> - Host fundraisers and community events to help raise awareness about suicide and support those who are affected by suicide. Also focuses on understanding and preventing suicide through education and research.</p>
-        </div>
+  <div class="container">
+
+    <div class="sources">
+      <img src="assets/make_a_change.jpg" alt="A person's hands holding coins with a paper that says 'Make a Change'">
+      <div class="desc">
+        <p><a href="https://mhanational.org/donate-now">Mental Health America</a> - Their message: "Your gift means we
+          can bring hope to the 1 in 5 Americans living with a mental health condition. Just $1.25 helps us screen
+          someone for a mental health condition before a point of crisis - B4Stage4. Together we are fighting smarter,
+          better, and harder than we ever have before."</p>
       </div>
-      
     </div>
 
-    <div class="divider"></div>
-    
-    <p class="instructions" id="donTwoSection">Click on the amount you want to donate.<br>If you want to "name your own price," please write the amount next to it before clicking the button.<br>If you don't like the amount you chose, click "Reset?" If you do like the amount you chose, click "Donate!"</p>
-
-    <div class="donations">
-      <button id="one">$1</button>
-      <button id="five">$5</button>
-      <button id="ten">$10</button>
-      <br>
-      <button id="selfInsert">Name your own price!</button>
-      <input type="number" id="price">
-      <br>
-      <button id="reset">Reset?</button>
-      <button id="done">Donate!</button>
-      <p id="equivalent"></p>
+    <div class="sources">
+      <img src="assets/three_girls.jpg"
+        alt="Three girls sitting outside on a wooden bench. The two girls on the left and right seem to be comforting the girl in the middle. The girl on the left has one hand on one knee of the middle girl. The girl on the right has one hand on the other knee of the middle girl.">
+      <div class="desc">
+        <p><a href="https://jedfoundation.org/">The Jed Foundation</a> - Focusing on suicide prevention and the
+          emotional wellbeing of teens and young adults. Their message: "With your support we’ll extend critical
+          lifelines to more than 13 million students. Please make a gift today to help us be there for young adults when
+          they need it most."</p>
+      </div>
     </div>
 
-    <div class="divider"></div>
-
-    <h1 id="donThreeSection">What to do after donating?</h1>
-    <h2>The journey doesn't stop after giving a donation. Here's a couple things you can do!</h2>
-
-    <div class="container">
-      
-      <div class="sources">
-        <img src="assets/activism.jpg" alt="A line of people outside under blue canopy tents. The man in the foreground is holding a sign that says 'Activism Works'">
-        <div class="desc">
-           <p>Help volunteer at different organizations! This can be in your local community, or you can participate in well-known movements such as <a href="https://www.givingtuesday.org/">GivingTuesday</a> and <a href="https://www.dosomething.org/us">DoSomething.org</a> and advocate for the causes you care about!</p>
-        </div>
+    <div class="sources">
+      <img src="assets/change_the_world.jpg"
+        alt="A picture of pavement with the words 'Together we can change the world' written in white chalk">
+      <div class="desc">
+        <p><a href="https://supporting.afsp.org/">American Foundation for Suicide Prevention</a> - Host fundraisers and
+          community events to help raise awareness about suicide and support those who are affected by suicide. Also
+          focuses on understanding and preventing suicide through education and research.</p>
       </div>
-
-      <div class="sources">
-        <img src="assets/fairy_lights.jpg" alt="A picture of two hands holding a bundle of glowing fairy lights">
-        <div class="desc">
-           <p>Research and share more facts about mental health to others who don't know much about. Explain them why mental health is important. If anyone you know has a mental illness and feels alone, let them know that you are there for them and empathize with them.</p>
-        </div>
-      </div>
-    
     </div>
 
-    <footer>
-      <p class="footText">Never stop warming up people's hearts</p>
-      <p class="footText">Made in 2023☕</p>
-    </footer>
-    
-  </body>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="instructions" id="donTwoSection">Click on the amount you want to donate.<br>If you want to "name your own
+    price," please write the amount next to it before clicking the button.<br>If you don't like the amount you chose,
+    click "Reset?" If you do like the amount you chose, click "Donate!"</p>
+
+  <div class="donations">
+    <button id="one">$1</button>
+    <button id="five">$5</button>
+    <button id="ten">$10</button>
+    <br>
+    <button id="selfInsert">Name your own price!</button>
+    <input type="number" id="price">
+    <br>
+    <button id="reset">Reset?</button>
+    <button id="done">Donate!</button>
+    <p id="equivalent"></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h1 id="donThreeSection">What to do after donating?</h1>
+  <h2>The journey doesn't stop after giving a donation. Here's a couple things you can do!</h2>
+
+  <div class="container">
+
+    <div class="sources">
+      <img src="assets/activism.jpg"
+        alt="A line of people outside under blue canopy tents. The man in the foreground is holding a sign that says 'Activism Works'">
+      <div class="desc">
+        <p>Help volunteer at different organizations! This can be in your local community, or you can participate in
+          well-known movements such as <a href="https://www.givingtuesday.org/">GivingTuesday</a> and <a
+            href="https://www.dosomething.org/us">DoSomething.org</a> and advocate for the causes you care about!</p>
+      </div>
+    </div>
+
+    <div class="sources">
+      <img src="assets/fairy_lights.jpg" alt="A picture of two hands holding a bundle of glowing fairy lights">
+      <div class="desc">
+        <p>Research and share more facts about mental health to others who don't know much about. Explain them why
+          mental health is important. If anyone you know has a mental illness and feels alone, let them know that you
+          are there for them and empathize with them.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="footText">Never stop warming up people's hearts</p>
+    <p class="footText">Made in 2023☕</p>
+  </footer>
+
+</body>
+
 </html>
