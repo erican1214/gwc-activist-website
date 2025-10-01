@@ -68,6 +68,34 @@ window.onscroll = function() {
   scrollFunction()
 };
 
+// Variables for bookmarks
+var bookmarks = document.getElementsByClassName("separateBookmark")
+var bookmarksInner = document.getElementsByClassName("bookmarksInner");
+var bookmarkButton = document.getElementById("bookmarkButton")
+
+if (bookmarks) {
+  for (var i = 0; i < bookmarks.length; i++) {
+    bookmarks[i].addEventListener("click", event => {
+      for (var i = 0; i < bookmarksInner.length; i++) {
+        bookmarksInner[i].style.display = "none";
+      }
+    })
+    bookmarks[i].addEventListener("mouseleave", event => {
+      for (var i = 0; i < bookmarksInner.length; i++) {
+        bookmarksInner[i].style.display = "none";
+      }
+    })
+  }
+}
+
+if (bookmarkButton) {
+  bookmarkButton.addEventListener("mouseover", event => {
+    for (var i = 0; i < bookmarksInner.length; i++) {
+      bookmarksInner[i].style.display = "block";
+    }
+  })
+}
+
 function scrollFunction() {
   for (var i = 0; i < toTheTopButtons.length; i++) {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
