@@ -17,99 +17,112 @@
 </head>
 
 <body>
+  <div class="warnBox">
 
-  <nav>
-    <div class=bookmarksOuter>
-      <button id="bookmarkButton">
-        |Bookmarks|
-        <ul class="bookmarksInner">
-          <li class=separateBookmark><a href="#titleSection">Title with 3 pictures (You are here!)</a></li>
-          <li class=separateBookmark><a href="#factSection">Facts about Mental Health</a></li>
-        </ul>
-      </button>
-    </div>
-    <ul>
-      <li><a href="home.html">Home☕</a></li>
-      <li><a href="need_support.html">Need Support?</a></li>
-      <li><a href="donate.html">Donate</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+    <h1>Trigger Warning</h1>
+    <p>This website contains information about <u>mental health</u>, including <u>depression, anxiety, and
+        suicide</u>. If any of these topics trigger you, please <u>EXIT OUT</u> of this tab. Enjoy some nice hot
+      cocoa instead :) <br>If you still wish to proceed, please be aware that the <u>"Facts about Mental Health"</u>
+      section on the Home Page may be triggering. <br>There are no triggering images on the website.</p>
 
-  <button onclick="topFunction()" class="toTheTop" title="Click me to scroll to the top!">To the Top!</button>
-
-  <h1 id="titleSection">HotCoco☕ - Warming up your Mental Health</h1>
-  <h2>Relax, take care of your mental health, and take a sip of hot cocoa</h2>
-
-  <div class="container">
-
-    <div class="content">
-      <img src="assets/mental_health.png"
-        alt="A cartoon drawing of a person sitting and hugging her knees with a sad face.">
-      <div class="overlay">
-        <p>Everyone needs a break or words of reassurance. Everyone's experiences are valid</p>
-      </div>
-    </div>
-
-    <div class="content">
-      <img src="assets/mental_health_tablet.jpg"
-        alt="Tablet screen shows the words 'Mental Health Matters' in white letters.">
-      <div class="overlay">
-        <p>Drink a warm cup of hot cocoa, or any drink you like really! Your mental health matters. It is just as
-          important as your physical health. Your mental health affects your physical health and vice versa.</p>
-      </div>
-    </div>
-
-    <div class="content">
-      <img src="assets/lonely_window.png"
-        alt="A cartoon drawing of a person with a yellow hijab looking out the window.">
-      <div class="overlay">
-        <p>Emphasize the importance of mental health. It has been more talked about since COVID-19, but spreading
-          awareness doesn't end there</p>
-      </div>
-    </div>
-
+    <button id="proceedButton">I have read the trigger warning and wish to proceed to the website</button>
   </div>
 
-  <div class="divider"></div>
+  <div class="overlayBody">
+    <nav>
+      <div class="bookmarksOuter">
+        <button id="bookmarkButton">
+          |Bookmarks|
+          <ul class="bookmarksInner">
+            <li class=separateBookmark><a href="#titleSection">Title with 3 pictures (You are here!)</a></li>
+            <li class=separateBookmark><a href="#factSection">Facts about Mental Health</a></li>
+          </ul>
+        </button>
+      </div>
+      <ul>
+        <li type="button" disabled="true"><a href="home.html">Home☕</a></li>
+        <li><a href="need_support.html">Need Support?</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
 
-  <h1 id="factSection">Facts about Mental Health</h1>
-  <h2>Help <u>educate</u> yourself and others. <u>Empathize</u> with yourself and others who are going through these
-    issues.</h2>
+    <button onclick="topFunction()" class="toTheTop" title="Click me to scroll to the top!">To the Top!</button>
 
-  <div class="factBox">
+    <h1 id="titleSection">HotCoco☕ - Warming up your Mental Health</h1>
+    <h2>Relax, take care of your mental health, and take a sip of hot cocoa</h2>
 
-    <p class="instructions"><strong>Click one of the buttons below to learn about...</strong></p>
-    <div class="factButtons">
-      <button id="depButton">Depression</button>
-      <button id="anxButton">Anxiety</button>
-      <button id="suiButton">Suicide</button>
-      <button id="genButton">General</button>
+    <div class="container">
+
+      <div class="content">
+        <img src="assets/mental_health.png"
+          alt="A cartoon drawing of a person sitting and hugging her knees with a sad face.">
+        <div class="overlay">
+          <p>Everyone needs a break or words of reassurance. Everyone's experiences are valid</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <img src="assets/mental_health_tablet.jpg"
+          alt="Tablet screen shows the words 'Mental Health Matters' in white letters.">
+        <div class="overlay">
+          <p>Drink a warm cup of hot cocoa, or any drink you like really! Your mental health matters. It is just as
+            important as your physical health. Your mental health affects your physical health and vice versa.</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <img src="assets/lonely_window.png"
+          alt="A cartoon drawing of a person with a yellow hijab looking out the window.">
+        <div class="overlay">
+          <p>Emphasize the importance of mental health. It has been more talked about since COVID-19, but spreading
+            awareness doesn't end there</p>
+        </div>
+      </div>
+
     </div>
-    <p id="fact"></p>
-    <p id="note"><strong>*NOTE*
-        Not every mental health illness is mentioned above. These are just some common facts. These facts are provided
-        by the links below. Clicking on them and exploring more is recommended :)</strong></p>
 
-    <!-- Links -->
-    <p><a href="https://www.who.int/health-topics/mental-health">World Health Organization (WHO)</a></p>
-    <p><a href="https://www.mhanational.org">Mental Health America</a></p>
-    <p><a href="https://ncdalliance.org/news-events/news/20-things-you-should-know-about-mental-health-today">NCD
-        Alliance</a></p>
-    <p><a href="https://www.dosomething.org/us/causes/mental-health">DoSomething.org</a></p>
-    <p><a href="https://adaa.org/">Anxiety & Depression Association of America (ADAA)</a></p>
-    <p><a href="https://www.nimh.nih.gov/">National Institute of Mental Health (NIMH)</a></p>
-    <p><a href="https://www.publichealth.columbia.edu/news/nearly-one-ten-americans-reports-having-depression">Columbia
-        University Mailman School of Public Health</a></p>
-    <p><a href="https://www.psychiatry.org/psychiatrists/diversity/education/mental-health-facts">American Psychiatric
-        Association</a></p>
+    <div class="divider"></div>
 
+    <h1 id="factSection">Facts about Mental Health</h1>
+    <h2>Help <u>educate</u> yourself and others. <u>Empathize</u> with yourself and others who are going through these
+      issues.</h2>
+
+    <div class="factBox">
+
+      <p class="instructions"><strong>Click one of the buttons below to learn about...</strong></p>
+      <div class="factButtons">
+        <button id="depButton">Depression</button>
+        <button id="anxButton">Anxiety</button>
+        <button id="suiButton">Suicide</button>
+        <button id="genButton">General</button>
+      </div>
+      <p id="fact"></p>
+      <p id="note"><strong>*NOTE*
+          Not every mental health illness is mentioned above. These are just some common facts. These facts are provided
+          by the links below. Clicking on them and exploring more is recommended :)</strong></p>
+
+      <!-- Links -->
+      <p><a href="https://www.who.int/health-topics/mental-health">World Health Organization (WHO)</a></p>
+      <p><a href="https://www.mhanational.org">Mental Health America</a></p>
+      <p><a href="https://ncdalliance.org/news-events/news/20-things-you-should-know-about-mental-health-today">NCD
+          Alliance</a></p>
+      <p><a href="https://www.dosomething.org/us/causes/mental-health">DoSomething.org</a></p>
+      <p><a href="https://adaa.org/">Anxiety & Depression Association of America (ADAA)</a></p>
+      <p><a href="https://www.nimh.nih.gov/">National Institute of Mental Health (NIMH)</a></p>
+      <p><a
+          href="https://www.publichealth.columbia.edu/news/nearly-one-ten-americans-reports-having-depression">Columbia
+          University Mailman School of Public Health</a></p>
+      <p><a href="https://www.psychiatry.org/psychiatrists/diversity/education/mental-health-facts">American Psychiatric
+          Association</a></p>
+
+    </div>
+
+    <footer>
+      <p class="footText">Never stop warming up people's hearts</p>
+      <p class="footText">Made in 2023☕</p>
+    </footer>
   </div>
-
-  <footer>
-    <p class="footText">Never stop warming up people's hearts</p>
-    <p class="footText">Made in 2023☕</p>
-  </footer>
 
 </body>
 

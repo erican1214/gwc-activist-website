@@ -64,10 +64,6 @@ var equivalent = document.getElementById("equivalent");
 // Source: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 var toTheTopButtons = document.getElementsByClassName("toTheTop");
 
-window.onscroll = function() {
-  scrollFunction()
-};
-
 // Variables for bookmarks
 var bookmarks = document.getElementsByClassName("separateBookmark")
 var bookmarksInner = document.getElementsByClassName("bookmarksInner");
@@ -266,3 +262,30 @@ function calcEquivalence() {
   }
   enableAll();
 }
+
+var allButtons = document.getElementsByTagName("button");
+var navBar = document.getElementsByTagName("nav");
+var proceedButton = document.getElementById("proceedButton");
+var warnBox = document.getElementsByClassName("warnBox");
+var overlayBody = document.getElementsByClassName("overlayBody");
+
+if (proceedButton) {
+  proceedButton.addEventListener("click", event => {
+    for (var i = 0; i < warnBox.length; i++) {
+      warnBox[i].style.display = "none";
+      overlayBody[i].style.opacity = "1";
+    }
+    for (var i = 0; i < overlayBody.length; i++) {
+      overlayBody[i].style.pointerEvents = "auto";
+    }
+  })
+}
+
+function showWarnBox() {
+  for (var i = 0; i < warnBox.length; i++) {
+    warnBox[i].style.display = "block";
+  }
+}
+
+window.onload = showWarnBox();
+window.onscroll = scrollFunction();

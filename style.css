@@ -12,7 +12,19 @@ body {
   color: #3D1200;
   text-align: center;
   height: 100vh;
+  z-index: 0;
   display: grid;
+}
+
+/* Makes website transparent when trigger warning is shown */
+.overlayBody {
+  width: 100%;
+  height: 100%;
+  background-color: #fdd6c9;
+  opacity: 0.6;
+  display: grid;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* STYLE TEXT */
@@ -47,7 +59,7 @@ ul {
   list-style-type: none;
   list-style: none;
   display: inline-block;
-  background-color: #3D1200
+  background-color: #3D1200;
 }
 
 li {
@@ -308,10 +320,16 @@ textarea {
 
 /* About Page */
 .aboutContainer {
+  position: relative;
+  margin: 4em 0em 3em;
   width: 100%;
   height: fit-content;
   display: block;
   padding: 0em 5em;
+}
+
+.aboutContainer img {
+  margin-top: 1em;
 }
 
 /* Footer */
@@ -356,7 +374,9 @@ footer {
 /* Trigger Warning */
 .warnBox {
   background-color: #3D1200;
-  position: relative;
+  color: #fdd6c9;
+  padding: 2em;
+  position: fixed;
   width: 75%;
   height: fit-content;
   align-content: center;
@@ -364,26 +384,16 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
-.warnText {
-  padding: 2em;
-  color: #fdd6c9;
-}
-
-.warnText h1 {
+.warnBox h1 {
   margin: 0;
 }
 
-#toWebsite {
+#proceedButton {
   margin: 1em;
-  width: 70%;
+  width: 80%;
   background-color: #fdd6c9;
-}
-
-#toWebsite a {
   color: #3D1200;
-  padding: 0.5em;
-  text-decoration: none;
-  font-weight: 700;
 }

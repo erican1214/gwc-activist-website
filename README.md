@@ -38,6 +38,7 @@ You can extend your project further by:
 - [Three Girls](https://unsplash.com/photos/DAFh1p9huAE)
 - [Hand with fairy lights](https://unsplash.com/photos/SZYreZsJ-fE)
 - [Blue Canopy Tents & People](https://unsplash.com/photos/Mo3DHoZC_a0)
+- [Hot Coco GIF](https://pixabay.com/gifs/coffee-cup-relaxed-caffeine-drink-8347/)
 
 ---
 
